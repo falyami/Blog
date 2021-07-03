@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Add Content</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel=icon href=/img/favicon.png sizes="16x16" type="image/png">
+        <link rel=icon href=/img/favicon.png sizes="32x32" type="image/png">
+        <!--CSS Section-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/styles.css">
+        <!--Script Section-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="divNavbar">
+                <nav class="navbar navbar-expand-md navbar-light bg-light">
+                    <a href="index.html" class="navbar-brand mr-1">
+                        <img src="/img/html-logo.png" height="30" alt="HTML Logo">
+                    </a>
+                    <span style="color: black;"><h5><strong>HTML Blog</strong></h5></span>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav ml-auto">
+                            <a id="lnkHome" href="index.html" class="nav-item nav-link active" style="display: block;">
+                                <img src="/img/home-icon.png" height="15" alt="Home"><span class="ml-1">Home</span>
+                            </a>
+                            <a id="lnkLogout" class="nav-item nav-link" style="display: none; cursor: pointer;">
+                                <img src="/img/logout-icon.png" height="19" alt="Logout"><span class="ml-1">Logout</span>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="container col-lg-6">
+            <div class="card mt-3">
+                <div class="row no-gutters">
+                    <div class="card-body">
+                        <div class="card-title text-center">
+                            <img src="/img/add-icon.png" height="50" alt="Add Content">
+                            <h4 style="display: inline-block; text-shadow: 2px 2px rgb(189, 185, 185);">Add Content to Blog</h4>
+                            <hr>
+                        </div>
+                        <form id="addContentForm" novalidate>
+                            <div id="divMessage" style="display: none;" class="alert alert-success" role="alert">Content have been added Successfully</div>
+                            <div class="form-group">
+                                <label for="title">Title</label>
+                                <input type="text" class="form-control" id="title" name="title" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="content">Content</label>
+                                <textarea type="text" class="form-control" id="content" name="content" rows="10" required></textarea>
+                            </div>
+                            <div class="form-group text-center">
+                                <button id="btnAdd" type="submit" class="btn btn-primary">Add Content</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="mt-2">
+            <div class="text-dark text-center p-2"><small><strong>&copy; 2021 HTML Blog. MEAN Stack Developer</strong></small></div>
+        </footer>
+        <script type="text/javascript" src="/js/content.js"></script>
+    </body>
+</html>

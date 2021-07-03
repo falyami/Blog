@@ -1,0 +1,29 @@
+
+.container {
+    min-height: 100vh !important;
+}
+.card-icon {
+    width: 120px !important;
+    margin: 15px !important;
+}
+.login {
+    width: 50% !important;
+}
+.card-h5 {
+    color: #bd2130a8 !important;
+}
+.read-more {
+    background-color: #a4a9ad;
+    color: white;
+    padding: .375rem .75rem;
+    border-radius: .25rem;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    
+}
+.read-more:hover {
+    background-color: #8c9196;
+    color: white;
+    text-decoration: none;
+}

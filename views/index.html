@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HTML Blog</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel=icon href=/img/favicon.png sizes="16x16" type="image/png">
+        <link rel=icon href=/img/favicon.png sizes="32x32" type="image/png">
+        <!--CSS Section-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/styles.css">
+        <!--Script Section-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="divNavbar">
+                <nav class="navbar navbar-expand-md navbar-light bg-light">
+                    <a href="index.html" class="navbar-brand mr-1">
+                        <img src="/img/html-logo.png" height="30" alt="HTML Logo">
+                    </a>
+                    <span style="color: black;"><h5><strong>HTML Blog</strong></h5></span>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                      <div class="navbar-nav ml-auto">
+                            <a id="lnkAddContent" href="addcontent.html" class="nav-item nav-link" style="display: none;">
+                                <img src="/img/add-icon.png" height="19" alt="Add Content"><span class="ml-1">Add Content</span>
+                            </a>
+                            <a id="lnkLogin" href="login.html" class="nav-item nav-link" style="display: block;">
+                                <img src="/img/login-icon.png" height="20" alt="Login"><span>Login</span>
+                            </a>
+                            <a id="lnkLogout" href="#" class="nav-item nav-link" style="display: none; cursor: pointer;">
+                                <img src="/img/logout-icon.png" height="19" alt="Logout"><span class="ml-1">Logout</span>
+                            </a>
+                      </div>
+                  </div>
+                </nav>
+            </div>
+        </header>
+        <div class="container">
+        </div>
+        <footer class="mt-2">
+            <div class="bg-dark text-white text-center p-2"><small>&copy; 2021 HTML Blog. MEAN Stack Developer</small></div>
+        </footer>
+        <script type="text/javascript" src="/js/index.js"></script>
+    </body>
+</html>
